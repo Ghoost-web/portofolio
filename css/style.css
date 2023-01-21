@@ -13,6 +13,58 @@
 */
 
 
+/*
+    - Start the main styles.
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+
+    /* I added this only for testing something,
+        And It will be deleted soon!!!
+    */
+    height: 150vh;
+}
+:root {
+    /* Put all the most-common used colors here */
+    --black-background: #252627;
+    --black-background-2: #1F1E28;
+    --black-color: red;
+    
+    --white-background: #fff;
+    --white-background-2: #f8fafb;
+    --white-color: #f8fafb;
+
+
+}
+/* Dark mode and light mode */
+/* NOTE: this will be apply only for the <body> element by javascript */
+.dark {
+    /* background-color: var(--black-background);  */
+    background-color: var(--black-background-2); 
+    color: #fff;
+    color: var(--white-color);
+}
+.light {
+    background-color: var(--white-background-2);
+    color: initial;
+}
+/*
+    - End of the main styles.
+*/
+
+
+
+
+
+
 
 
 
