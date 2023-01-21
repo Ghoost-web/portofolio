@@ -61,6 +61,10 @@ body {
     background-color: var(--white-background-2);
     color: initial;
 }
+.container {
+    width: 80%;
+    margin: auto;
+}
 /*
     - End of the main styles.
 */
@@ -125,8 +129,44 @@ body {
 /*
     - Styles for the sections
 */
+/*
+    - Styles for about-us section
+*/
+.about {
+    height: 100vh;
+}
+.about .container {
+    display: flex;
+}
+.about .container div {
+    width: 50%;
+    height: 100vh;
+    padding: 15px;
+}
+.about span.center {
+    height: 100vh;
+    width: 5px;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.about span.center span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--darker-main-color);
+}
 
 
+
+
+
+/*
+    - End Styles for about-us section
+*/
 
 
 
@@ -187,6 +227,9 @@ body {
     .mobile-nav {
         display: block;
     }
+    .container {
+        width: 100%;
+    }
 }
 /*
     - End of responsive
@@ -199,3 +242,5 @@ body {
 /*
     - End of styling
 */
+
+/* test */
