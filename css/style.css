@@ -42,6 +42,8 @@ body {
     --white-background: #fff;
     --white-background-2: #f8fafb;
     --white-color: #f8fafb;
+    --white-color-lighter: #E4E4E4;
+
 
 
 }
@@ -76,37 +78,106 @@ body {
 .header {
     width: 100%;
     height: 6rem;
-    background-color: brown;
+    /* background-color: brown; */
     color: var(--white-color);
 
     display: flex;
     justify-content: space-around;
     align-items: center;
 
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.2));
+
 }
 .header a {
     text-decoration: none;
     color: inherit;
 }
+.nav-bar a {
+    margin: 0 1rem;
+    text-transform: capitalize;
+    border-radius: 8px;
+    padding: 0.6rem;
+    background-color: transparent;
+    transition: 0.4s;
+}
+.nav-bar a:hover {
+    border: 1px solid rgba(238, 238, 238, 0.708);
+    background-color: rgba(255, 255, 255, 0.3);
+}
 .logo {
     font-family: 'Pacifico', cursive;
-    font-size: 2rem ;
-    text-shadow: 0 0 3px 0 inherit;
+    font-size: 2rem;
+    /* text-shadow: 1px 1px 1px; */
+    text-shadow: 0 1px 2px;
 }
 
 .mobile-nav {
     display: none;
 }
+.mobile-nav a {
+    border-radius: 8px;
+    padding: 0.6rem;
+    background-color: transparent;
 
+    transition: 0.3s;
 
-
-
+}
+.mobile-nav a:hover {
+    border: 1px solid rgba(238, 238, 238, 0.708);
+    background-color: rgba(255, 255, 255, 0.2);
+}
 .img-wrapper {
     width: 100%;
     height: 100vh;
-    /* For test only */
-    background-color: #dcdcdc;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    box-shadow: 0 2px 8px #022;
 }
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* opacity: 0.65; */
+    opacity: 0.45;
+    filter: grayscale(50%);
+
+    animation:                  scale 15s infinite forwards linear alternate;
+    -webkit-animation:          scale 15s infinite forwards linear alternate;
+    -moz-animation:             scale 15s infinite forwards linear alternate;
+    -o-animation:               scale 15s infinite forwards linear alternate;
+    -ms-animation:              scale 15s infinite forwards linear alternate;
+}
+@keyframes scale {
+    0% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.banner {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.banner h1 {
+    /* font-family: ; */
+    /* width: 100%; */
+    text-align: center;
+    color: var(--white-color);
+    color: var(--white-color-lighter);
+    font-size: 2rem;
+}
+
 
 /*
     - End styling the header 
@@ -182,6 +253,10 @@ body {
     }
     .mobile-nav {
         display: block;
+    }
+    .banner h1 {
+    font-size: 1.3rem;
+
     }
 }
 /*
