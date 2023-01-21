@@ -43,7 +43,11 @@ body {
     --white-background-2: #f8fafb;
     --white-color: #f8fafb;
 
-
+    /* these are the colors we choosed */
+    --dark-mode-background: #0d0e22;
+    --light-mode-background: #eee;
+    --main-color: #8184f9;
+    --darker-main-color: #676be6;
 }
 /* Dark mode and light mode */
 /* NOTE: this will be apply only for the <body> element by javascript */
