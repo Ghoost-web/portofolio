@@ -6,7 +6,8 @@
 /*
     - At first import all the required fonts here
 */
-
+/* Import font for the company-name */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 /*
     - End of importing the fonts
@@ -72,15 +73,39 @@ body {
 /*
     - Start styling the header 
 */
+.header {
+    width: 100%;
+    height: 6rem;
+    background-color: brown;
+    color: var(--white-color);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.header a {
+    text-decoration: none;
+    color: inherit;
+}
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+
+
+
 .img-wrapper {
     width: 100%;
     height: 100vh;
     /* For test only */
     background-color: #dcdcdc;
 }
-
-
-
 
 /*
     - End styling the header 
@@ -142,8 +167,10 @@ body {
 /*
     - Put all the required code for responsive design here
 */
-
-
+@media (min-width: 320px) and (max-width: 767px) {
+    .header {
+        height: 5rem;
+    }
 /*
     - End of responsive
 */
