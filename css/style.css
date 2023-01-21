@@ -90,7 +90,8 @@ body {
 }
 .logo {
     font-family: 'Pacifico', cursive;
-    font-size: 1.8rem;
+    font-size: 2rem ;
+    text-shadow: 0 0 3px 0 inherit;
 }
 
 .mobile-nav {
@@ -171,20 +172,21 @@ body {
     .header {
         height: 5rem;
     }
+    .logo {
+        font-size: 1rem;
+        margin: 0 1rem;
+
+    }
+    .nav-bar {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+    }
+}
 /*
     - End of responsive
 */
-
-
-
-
-
-
-
-
-
-
-
 
 
 
