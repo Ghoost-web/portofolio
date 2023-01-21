@@ -72,7 +72,12 @@ body {
 /*
     - Start styling the header 
 */
-
+.img-wrapper {
+    width: 100%;
+    height: 100vh;
+    /* For test only */
+    background-color: #dcdcdc;
+}
 
 
 
