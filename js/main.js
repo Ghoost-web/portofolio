@@ -6,15 +6,17 @@
 /**
  * Start of global variables
  */
+const leftItems = document.querySelectorAll('.left .item')
+const rightItems = document.querySelectorAll('.right .item')
 
 
 
 /**
  * End of global variables
  */
-const leftItems = document.querySelectorAll('.left .item')
-const rightItems = document.querySelectorAll('.right .item')
-
+/**
+ * Start helper fuctions
+ */
 function aboutUsAnimation() {
 
     leftItems.forEach(i => i.style = `transform: translate(-600px)`)
@@ -30,6 +32,12 @@ document.body.onscroll = () => {
     }
 }
 
+
+
+
+/**
+ * End helper fuctions
+ */
 
 
 
