@@ -262,7 +262,38 @@ body {
 /* 
     - Styles for the footer 
 */ 
+.footer{
+   width:100%;
+   height:100px;
+   background-color: #252627;
+   position:relative;
 
+}
+.big{
+ width:100%;
+ height:90%;
+ display:flex;
+ justify-content:space-between;
+ justify-items: center;
+ text-align: center;
+  
+
+}
+.big div{
+    font-size:25px;
+    color:#eee;
+    margin: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.big div:hover{
+    font-size:25px;
+    color:#eee;
+    transition:2s;
+    cursor:pointer;
+    border-bottom: 1px solid;
+
+}
 
 /* 
     - End Styles for the footer 
