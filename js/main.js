@@ -23,15 +23,6 @@ function aboutUsAnimation() {
     rightItems.forEach(i => i.style = `transform: translate(600px)`)
 
 }
-document.body.onscroll = () => {
-    if (scrollY >= 300) {
-        leftItems.forEach(i => i.style = `transform: translate(0)`)
-        rightItems.forEach(i => i.style = `transform: translate(0)`)
-    } else {
-        aboutUsAnimation()
-    }
-}
-
 
 
 
@@ -48,10 +39,15 @@ x.onclick = function () {
   scroll({ top: 0, behavior: "smooth" });
 };
 window.onscroll = function () {
+console.log(scrollY);
     if (scrollY >= 700) {
       x.style.display = "block";
+    }  else if(scrollY >= 300) {
+        leftItems.forEach(i => i.style = `transform: translate(0)`)
+        rightItems.forEach(i => i.style = `transform: translate(0)`)
     } else {
-      x.style.display = "none";
+        x.style.display = "none";
+        aboutUsAnimation()
     }
   };
 /** end button an scroll  */

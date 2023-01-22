@@ -227,6 +227,7 @@ section {
     height: 100vh;
     /* margin: 20px 0 ; */
     margin: 1.5rem 0 100vh;
+    overflow: hidden;
     
 }
 /*
@@ -292,6 +293,23 @@ section {
 */
 
 
+/*
+    - Start Styles for contact-us section
+*/
+.contact-us h1 {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+    background-color: var(--darker-main-color);
+    border-radius: 15px;
+}
+
+/*
+    - End Styles for contact-us section
+*/
 
 /*
     - End Styles for the sections
