@@ -39,6 +39,13 @@ let x = document.getElementById("top");
 x.onclick = function () {
   scroll({ top: 0, behavior: "smooth" });
 };
+window.onscroll = function () {
+    if (scrollY >= 700) {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  };
 /** end button an scroll  */
 
 
