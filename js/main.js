@@ -34,9 +34,12 @@ document.body.onscroll = () => {
 
 
 
-
-
-
+/** start button an scroll  */
+let x = document.getElementById("top");
+x.onclick = function () {
+  scroll({ top: 0, behavior: "smooth" });
+};
+/** end button an scroll  */
 
 
 
