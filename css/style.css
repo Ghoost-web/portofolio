@@ -9,6 +9,8 @@
 /* Import font for the company-name */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+/* Import font "Baloo-2"  */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 /*
     - End of importing the fonts
 */
@@ -37,12 +39,14 @@ body {
     /* Put all the most-common used colors here */
     --black-background: #252627;
     --black-background-2: #1F1E28;
+    --black-color-heavy: #2a2a2a;
     --black-color: red;
     
     --white-background: #fff;
     --white-background-2: #f8fafb;
     --white-color: #f8fafb;
     --white-color-lighter: #E4E4E4;
+    --white-border: #f5f5f5;
 
 
     /* these are the colors we choosed */
@@ -202,7 +206,9 @@ body {
 */
 section {
     height: 100vh;
-    margin: 20px 0;
+    /* margin: 20px 0 ; */
+    margin: 1.5rem 0 100vh;
+    
 }
 /*
     - Styles for about-us section
@@ -275,12 +281,6 @@ section {
 
 
 
-
-
-
-
-
-
 /* start button */
 #top {
     width: 50px;
@@ -297,9 +297,9 @@ section {
 
 
 /* 
-    - Styles for the footer 
+    - Styles for the Old footer 
 */ 
-.footer{
+/* .footer{
    width:100%;
    height:100px;
    background-color: #252627;
@@ -330,19 +330,48 @@ section {
     cursor:pointer;
     border-bottom: 1px solid;
 
-}
+} */
 
 /* 
-    - End Styles for the footer 
+    - End Styles for the old footer 
 */ 
 
+/* //////////////////////////////////////////////// */
+/* //////////////////////////////////////////////// */
+
+/* 
+    - Styles for the New footer 
+*/ 
+
+.footer-new {
+    width: 100%;
+    margin: 100vh 0 0;
+    height: 25vh;
+    background-color: var(--black-color-heavy);
+    border-top: 0.00005px solid var(--white-border);
+    /* margin: 7rem 0; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.footer-new p {
+    font-size: 0.88rem;
+    font-family: 'Baloo 2', cursive;
+    margin: 0.5rem 0;
+    color: var(--white-color-lighter);
+}
+#company-name span {
+    font-family: 'Pacifico', cursive; 
+    font-weight: normal;  
+}
 
 
-
-
-
-
-
+/* 
+    - End Styles for the New footer 
+*/ 
 
 
 
