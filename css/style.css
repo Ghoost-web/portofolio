@@ -355,7 +355,6 @@ section {
     color: var(--main-color);
     font-size: 1.4rem;
 }
-
 /*
     - End Styles for about-us section
 */
@@ -386,15 +385,22 @@ section {
     height: 200px;
     left: -80px;
     top: -30px;
-    animation: contact-span infinite 10s forwards;
+    animation:          contact-span infinite 10s forwards;
+    -webkit-animation:  contact-span infinite 10s forwards;
+    -moz-animation:     contact-span infinite 10s forwards;
+    -o-animation:       contact-span infinite 10s forwards;
+    -ms-animation:      contact-span infinite 10s forwards;
 }
 .contact-us .left span.s {
     width: 150px;
     height: 150px;
     right: -30px;
     bottom: -30px;
-    animation: contact-span infinite 10s backwards;
-
+    animation:          contact-span infinite 10s backwards;
+    -webkit-animation:  contact-span infinite 10s backwards;
+    -moz-animation:     contact-span infinite 10s backwards;
+    -o-animation:       contact-span infinite 10s backwards;
+    -ms-animation:      contact-span infinite 10s backwards;
 }
 
 @keyframes contact-span {
