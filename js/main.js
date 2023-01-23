@@ -20,16 +20,16 @@ const mobileMenu = document.querySelector('.mobile-menu');
  */
 function aboutUsAnimation() {
 
-    leftItems.forEach(i => i.style = `transform: translate(-600px)`)
-    rightItems.forEach(i => i.style = `transform: translate(600px)`)
+    leftItems.forEach(i => i.style = `transform: translate(-600px)`);
+    rightItems.forEach(i => i.style = `transform: translate(600px)`);
 
 }
 document.body.onscroll = () => {
     if (scrollY >= 300) {
-        leftItems.forEach(i => i.style = `transform: translate(0)`)
-        rightItems.forEach(i => i.style = `transform: translate(0)`)
+        leftItems.forEach(i => i.style = `transform: translate(0)`);
+        rightItems.forEach(i => i.style = `transform: translate(0)`);
     } else {
-        aboutUsAnimation()
+        aboutUsAnimation();
     }
 }
 
@@ -67,23 +67,14 @@ console.log(scrollY);
     if (scrollY >= 700) {
       x.style.display = "block";
     }  else if(scrollY >= 300) {
-        leftItems.forEach(i => i.style = `transform: translate(0)`)
-        rightItems.forEach(i => i.style = `transform: translate(0)`)
+        leftItems.forEach(i => i.style = `transform: translate(0)`);
+        rightItems.forEach(i => i.style = `transform: translate(0)`);
     } else {
         x.style.display = "none";
-        aboutUsAnimation()
+        aboutUsAnimation();
     }
   };
 /** end button an scroll  */
-
-
-
-
-
-
-
-
-
 
 
 
