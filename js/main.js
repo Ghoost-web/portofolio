@@ -6,14 +6,15 @@
 /**
  * Start of global variables
  */
-const leftItems = document.querySelectorAll('.left .item')
-const rightItems = document.querySelectorAll('.right .item')
-
+const leftItems = document.querySelectorAll('.left .item');
+const rightItems = document.querySelectorAll('.right .item');
+const mobileMenu = document.querySelector('.mobile-menu');
 
 
 /**
  * End of global variables
  */
+
 /**
  * Start helper fuctions
  */
@@ -31,6 +32,20 @@ document.body.onscroll = () => {
         aboutUsAnimation()
     }
 }
+
+// Start the function for opining the mobile-menu 
+function sideMenu() {
+	mobileMenu.style.display = 'block';
+	document.body.style.overflow = 'hidden';
+}
+// End the function for opining the mobile-menu 
+
+// Start the function for closing the mobile-menu
+function closeMenu() {
+	mobileMenu.style.display = 'none';
+	document.body.style.overflow = 'visible';
+}
+// End the function for closing the mobile-menu
 
 
 

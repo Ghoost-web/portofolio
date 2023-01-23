@@ -81,12 +81,6 @@ body {
 
 
 
-
-
-
-
-
-
 /*
     - Start styling the header 
 */
@@ -130,18 +124,17 @@ body {
     user-select: none;
 }
 
-.mobile-nav {
+.burger-menu {
     display: none;
 }
-.mobile-nav a {
+.burger-menu a {
     border-radius: 8px;
     padding: 0.6rem;
     background-color: transparent;
 
     transition: 0.3s;
-
 }
-.mobile-nav a:hover {
+.burger-menu a:hover {
     border: 1px solid rgba(238, 238, 238, 0.708);
     background-color: rgba(255, 255, 255, 0.2);
 }
@@ -153,6 +146,67 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 
     box-shadow: 0 2px 8px #022;
+}
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--darker-main-color);
+    width: 80%;
+    height: 100vh;
+    border-left: 2px solid var(--white-border) ;
+    box-shadow: 0 0 0 1000vmax rgba(0, 0, 0, .65);
+
+    animation: appear 1s;
+    -webkit-animation: appear 1s;
+    -moz-animation: appear 1s;
+    -o-animation:   appear 1s;
+    -ms-animation:  appear 1s;
+
+    display: none;
+}
+@keyframes appear {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%
+    }
+}
+#close-btn {
+    position: fixed;
+    top: 9%;
+    left: 35%;
+    background-color: var(--main-color);
+    box-shadow: 0 0 0.18rem rgba(0, 0, 0, .65);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+#close-btn p {
+    font-size: 1.35rem;
+    padding: 0.3rem;
+    text-shadow: 0 0 2px;
+}
+.mobile-menu ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 7rem 0;
+    
+}
+.mobile-menu li {
+    text-transform: capitalize;
 }
 .img-wrapper img {
     width: 100%;
@@ -412,7 +466,7 @@ section {
     .nav-bar {
         display: none;
     }
-    .mobile-nav {
+    .burger-menu {
         display: block;
     }
     .banner h1 {
