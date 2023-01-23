@@ -157,11 +157,11 @@ body {
     border-left: 2px solid var(--white-border) ;
     box-shadow: 0 0 0 1000vmax rgba(0, 0, 0, .65);
 
-    animation: appear 1s;
-    -webkit-animation: appear 1s;
-    -moz-animation: appear 1s;
-    -o-animation:   appear 1s;
-    -ms-animation:  appear 1s;
+    animation:          appear 1s ;
+    -webkit-animation:  appear 1s ;
+    -moz-animation:     appear 1s ;
+    -o-animation:       appear 1s ; 
+    -ms-animation:      appear 1s ;
 
     display: none;
 }
@@ -188,6 +188,23 @@ body {
     align-items: center;
 
     cursor: pointer;
+
+    /* opacity: 0; */
+    animation:          appear-btn 1s 0.2s;
+    -webkit-animation:  appear-btn 1s 0.2s;
+    -moz-animation:     appear-btn 1s 0.2s;
+    -o-animation:       appear-btn 1s 0.2s;
+    -ms-animation:      appear-btn 1s 0.2s;
+}
+@keyframes appear-btn {
+    from {
+        top: 0;
+        opacity: 0;
+    }
+    to {
+        top: 9%;
+        opacity: 1;
+    }
 }
 #close-btn p {
     font-size: 1.35rem;
@@ -267,10 +284,6 @@ body {
 /*
     - End styling the header 
 */
-
-
-
-
 
 
 
