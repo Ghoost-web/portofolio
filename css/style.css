@@ -395,6 +395,9 @@ section {
     right: 20px;
     background-color: var(--darker-main-color);
     cursor: pointer;}
+
+
+    .bx-up-arrow-alt{color: white; font-size: xx-large; margin: 0.6rem;}
 /* end button */
 
 
