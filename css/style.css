@@ -56,6 +56,7 @@ body {
     --dark-mode-background: #0d0e22;
     --light-mode-background: #eee;
     --main-color: #8184f9;
+    --lighter-main-color: #dbdcff;
     --darker-main-color: #676be6;
 }
 /* Dark mode and light mode */
@@ -363,15 +364,119 @@ section {
 /*
     - Start Styles for contact-us section
 */
-.contact-us h1 {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    font-size: 3rem;
-    font-weight: bolder;
-    color: white;
+.contact-us {
+    background-image: linear-gradient(var(--lighter-main-color), var(--darker-main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50%;
+}
+.contact-us .left span {
+    position: absolute;
+    background-color: var(--lighter-main-color);
+    border-radius: 50%;
+    opacity: 0.3;
+}
+.contact-us .left span.f {
+    width: 200px;
+    height: 200px;
+    left: -80px;
+    top: -30px;
+    animation: contact-span infinite 10s forwards;
+}
+.contact-us .left span.s {
+    width: 150px;
+    height: 150px;
+    right: -30px;
+    bottom: -30px;
+    animation: contact-span infinite 10s backwards;
+
+}
+
+@keyframes contact-span {
+    50% {
+        transform: translate(20% , 0);
+    }
+    100% {
+        transform: translate(0 , 0);
+    }
+}
+.contact-us .container .left {
     background-color: var(--darker-main-color);
-    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.contact-us .container .left h1 {
+    font-size: 2rem;
+    color: white;
+}
+.contact-us .container .left .links {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.contact-us .container .left .links i {
+    color: var(--main-color);
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.contact-us .container .left .links i:hover {
+    color: white;
+    background-color: var(--main-color);
+    padding: 8px;
+    border: 2px solid white;
+}
+
+.contact-us .right {
+    background-color: var(--lighter-main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us .right form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+.contact-us input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin: 0.5rem 0;
+    resize: none;
+    font-size: 1.1rem;
+    border-radius: 3px;
+}
+.contact-us button {
+    background-color: var(--main-color);
+    border: none;
+    outline: none;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.329);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+.contact-us button:hover {
+    background-color: var(--darker-main-color);
+}
+.contact-us button:active {
+    box-shadow: none;
 }
 
 /*
