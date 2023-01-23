@@ -514,10 +514,28 @@ section {
     bottom: 30px;
     right: 20px;
     background-color: var(--darker-main-color);
-    cursor: pointer;}
+    cursor: pointer;
 
+    opacity: 0.85;
+    z-index: 3;
 
-    .bx-up-arrow-alt{color: white; font-size: xx-large; margin: 0.6rem;}
+    animation:          top-arrow 0.7s;
+    -webkit-animation:  top-arrow 0.7s;
+    -moz-animation:     top-arrow 0.7s;
+    -ms-animation:      top-arrow 0.7s;
+    -o-animation:       top-arrow 0.7s;
+}
+@keyframes top-arrow {
+    from {
+        opacity: 0;
+        right: 0;
+    }
+}
+.bx-up-arrow-alt{
+    color: white;
+    font-size: xx-large;
+    margin: 0.6rem;
+}
 /* end button */
 
 
