@@ -14,6 +14,14 @@
 
 /* import Roboto font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100;8..144,400&display=swap');
+
+/* Import "Poppins" font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+/* 
+    - To import later
+    font-family: 'Poppins', sans-serif;
+*/
+
 /*
     - End of importing the fonts
 */
