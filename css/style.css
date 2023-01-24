@@ -50,6 +50,7 @@ body {
     /* Put all the most-common used colors here */
     --black-background: #252627;
     --black-background-2: #1F1E28;
+    --black-background-new: #191d2b;
     --black-color-heavy: #2a2a2a;
     --black-color: red;
     
@@ -70,10 +71,22 @@ body {
 /* Dark mode and light mode */
 /* NOTE: this will be apply only for the <body> element by javascript */
 .dark {
-    /* background-color: var(--black-background);  */
     background-color: var(--black-background-2); 
+    background-color: var(--black-background); 
+    background-color: var(--black-background-new); 
     color: #fff;
     color: var(--white-color);
+}
+.dark-lin2 {
+    background: linear-gradient(
+        180deg,
+        hsl(237deg 45% 9%) 11%,
+        hsl(227deg 48% 17%) 52%,
+        hsl(224deg 52% 26%) 65%,
+        hsl(222deg 57% 34%) 73%,
+        hsl(219deg 62% 43%) 80%,
+        hsl(217deg 71% 51%) 100%
+      );
 }
 .light {
     background-color: var(--white-background-2);
@@ -301,10 +314,10 @@ body {
 */
 section {
     height: 100vh;
-    /* margin: 20px 0 ; */
-    margin: 1.5rem 0 100vh;
+    /* margin: 1.5rem 0 100vh; */
+    /* margin: 1.5rem 0 20rem; */
+    margin: 20rem 0;
     overflow: hidden;
-    
 }
 /*
     - Styles for about-us section
@@ -578,6 +591,7 @@ section {
     bottom: 30px;
     right: 20px;
     background-color: var(--darker-main-color);
+    box-shadow: 0 0 6px 0 var(--main-color);
     cursor: pointer;
 
     opacity: 0.85;
@@ -656,7 +670,8 @@ section {
     width: 100%;
     margin: 100vh 0 0;
     height: 25vh;
-    background-color: var(--black-color-heavy);
+    /* background-color: var(--black-color-heavy); */
+    background-color: var(--dark-mode-background);
     border-top: 0.00005px solid var(--white-border);
     /* margin: 7rem 0; */
 
@@ -682,8 +697,6 @@ section {
 /* 
     - End Styles for the New footer 
 */ 
-
-
 
 
 
