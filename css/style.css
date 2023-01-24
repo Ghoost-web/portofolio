@@ -596,7 +596,7 @@ section {
 
     opacity: 0.85;
     z-index: 3;
-
+    display: none;
     animation:          top-arrow 0.7s;
     -webkit-animation:  top-arrow 0.7s;
     -moz-animation:     top-arrow 0.7s;
