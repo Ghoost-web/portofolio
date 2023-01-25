@@ -514,6 +514,21 @@ section {
     -o-animation:       contact-span infinite 10s forwards;
     -ms-animation:      contact-span infinite 10s forwards;
 }
+.contact-us .container {
+    border-radius: 15px;
+}
+
+/* Adding border-radius */
+.contact-us .container .left {
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+.contact-us .container .right {
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+/* End Adding border-radius */
+
 .contact-us .left span.s {
     width: 150px;
     height: 150px;
@@ -812,6 +827,25 @@ section {
         width:  100%;
         height: 50%;
     }
+    /* Adding border-radius */
+    .contact-us .container .left {
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+
+        border-bottom-left-radius: initial;
+        border-bottom-right-radius: initial;
+    
+    }
+    .contact-us .container .right {
+        border-bottom-right-radius: inherit;
+        border-bottom-left-radius: inherit;
+
+        border-top-left-radius: initial;
+        border-top-right-radius: initial;
+
+    }
+    /* End Adding border-radius */
+
     .about span.center {
         width: 3px;
     }
