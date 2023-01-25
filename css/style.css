@@ -428,7 +428,7 @@ section {
     border-radius: 13px;
     position: relative;
 }
-.services .container .serv .box:hover {
+.skills .container .serv .box:hover {
     color: var(--white-color-lighter);
     background-color: var(--darker-main-color);
     transform: translateY(-10px);
