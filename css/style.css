@@ -420,7 +420,7 @@ section {
     border-radius: 13px;
     position: relative;
 }
-.skills .container .serv .box:hover {
+.services .container .serv .box:hover {
     color: var(--white-color-lighter);
     background-color: var(--darker-main-color);
     transform: translateY(-10px);
@@ -714,7 +714,6 @@ section {
     align-items: center;
     flex-direction: column;
     gap: 1rem 0;
-
 }
 .footer-new p {
     font-size: 0.88rem;
