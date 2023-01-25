@@ -483,7 +483,7 @@ section {
     - Start Styles for contact-us section
 */
 .contact-us {
-    background-image: linear-gradient(var(--lighter-main-color), var(--darker-main-color));
+    /* background-image: linear-gradient(var(--lighter-main-color), var(--darker-main-color)); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -491,7 +491,8 @@ section {
 .contact-us .container {
     display: flex;
     height: 50%;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.281);
+    /* box-shadow: 0 5px 30px rgba(0, 0, 0, 0.281); */
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
 }
 .contact-us .container > div {
     height: 100%;
