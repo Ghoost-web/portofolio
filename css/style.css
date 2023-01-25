@@ -331,7 +331,7 @@ section {
     height: 100vh;
     /* margin: 1.5rem 0 100vh; */
     /* margin: 1.5rem 0 20rem; */
-    margin: 20rem 0;
+    margin: 8rem 0;
     overflow: hidden;
 }
 /*
@@ -342,12 +342,13 @@ section {
 }
 .about .container .content div {
     width: 50%;
-    height: 100vh;
     padding: 15px;
 }
 .about span.center {
-    height: 100vh;
+    position: absolute;
+    height: 100%;
     width: 5px;
+    left: calc(50% - 2.5px);
     background-color: var(--main-color);
     display: flex;
     flex-direction: column;
@@ -389,7 +390,7 @@ section {
 }
 .about p {
     color: var(--main-color);
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 /*
     - End Styles for about-us section
@@ -802,6 +803,25 @@ section {
     .contact-us .container > div {
         width:  100%;
         height: 50%;
+    }
+    .about span.center {
+        width: 3px;
+    }
+    .about span.center span {
+        width: 10px;
+        height: 10px;
+    }
+    .about .container .head h1 {
+        font-size: 2rem;
+    }
+
+    .about .content > div .item i {
+        font-size: 4rem;
+    }
+    .about p {
+        font-size: 0.7rem;
+        padding: 5px;
+        text-overflow:clip;
     }
 }
 /*
