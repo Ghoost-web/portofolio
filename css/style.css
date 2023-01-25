@@ -397,7 +397,7 @@ section {
 */
 
 /* Start Service */
-.services .container .head h1 {
+.skills .container .head h1 {
     width: 100%;
     text-align: center;
     padding: 20px;
@@ -407,7 +407,7 @@ section {
     background-color: var(--darker-main-color);
     border-radius: 15px;
 }
-.services .container .serv {
+.skills .container .serv {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
     gap: 20px;
@@ -415,18 +415,18 @@ section {
     text-align: center;
     color: var(--white-color-lighter);
 }
-.services .container .serv .box {
+.skills .container .serv .box {
     box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%), 0px 2px 4px 0px rgb(0 0 0 / 12%);
     border-radius: 13px;
     position: relative;
 }
-.services .container .serv .box:hover {
+.skills .container .serv .box:hover {
     color: var(--white-color-lighter);
     background-color: var(--darker-main-color);
     transform: translateY(-10px);
     transition: 0.5s;
 }
-.services .container .serv .box::after {
+.skills .container .serv .box::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -437,35 +437,35 @@ section {
     top: 0.5px;
     transition: 0.5s;
 }
-.services .container .serv .box:hover::after {
+.skills .container .serv .box:hover::after {
     width: 95.5%;
 }
-.services .container .serv .box i {
+.skills .container .serv .box i {
     font-size: 3.5rem;
     padding: 15px;
 }
-.services .container .serv .box .i-1 {
+.skills .container .serv .box .i-1 {
     color: #EF652A;
 }
-.services .container .serv .box .i-2 {
+.skills .container .serv .box .i-2 {
     color: #254BDD;
 }
-.services .container .serv .box .i-3 {
+.skills .container .serv .box .i-3 {
     color: #E9CA32;
 }
-.services .container .serv .box .i-4 {
+.skills .container .serv .box .i-4 {
     color: #60DAFB;
 }
-.services .container .serv .box .i-5 {
+.skills .container .serv .box .i-5 {
     color: #539F43;
 }
-.services .container .serv .box .i-6 {
+.skills .container .serv .box .i-6 {
     color: #740FEB;
 }
-.services .container .serv .box h3 {
+.skills .container .serv .box h3 {
     padding: 10px;
 }
-.services .container .serv .box p {
+.skills .container .serv .box p {
     padding: 10px;
     line-height: 1.6;
 }
