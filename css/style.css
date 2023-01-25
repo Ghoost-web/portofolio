@@ -805,6 +805,14 @@ section {
         font-size: 0.9rem;
     }
 }
+@media (width < 850px) {
+    .nav-bar {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+}
 @media (width < 600px) {
     .contact-us h1 {
         font-size: 1.5rem !important;
