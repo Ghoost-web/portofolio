@@ -713,6 +713,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 1rem 0;
 
 }
 .footer-new p {
@@ -835,5 +836,3 @@ section {
 /*
     - End of styling
 */
-
-/* test */
