@@ -337,12 +337,18 @@ section {
 /*
     - Styles for about-us section
 */
+.about .container {
+    height: 100%;
+    position: relative;
+
+}
 .about .container .content {
     display: flex;
+    height: 100%;
 }
 .about .container .content div {
+    padding: 1.5rem;
     width: 50%;
-    padding: 15px;
 }
 .about span.center {
     position: absolute;
@@ -377,10 +383,12 @@ section {
     flex-direction: column;
 }
 .about .content > div .item {
-    height: 20%;
     width: 100%;
     margin: 5px 0;
     transition: 2s;
+    height: 6rem;
+    display: flex;
+    align-items: center;
 }
 .about .content > div .item i {
     color: var(--main-color);
@@ -816,7 +824,7 @@ section {
     }
 
     .about .content > div .item i {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .about p {
         font-size: 0.7rem;
