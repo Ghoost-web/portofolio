@@ -737,12 +737,15 @@ section {
 }
 .footer-new .social-icon .face:hover {
     color: #1873EB;
+    transition: 0.3s;
 }
 .footer-new .social-icon .git:hover {
     color: #9354AD;
+    transition: 0.3s;
 }
 .footer-new .social-icon .linked:hover {
     color: #016CA9;
+    transition: 0.3s;
 }
 /* 
     - End Styles for the New footer 
