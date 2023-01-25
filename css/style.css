@@ -86,7 +86,7 @@ body {
         hsl(222deg 57% 34%) 73%,
         hsl(219deg 62% 43%) 80%,
         hsl(217deg 71% 51%) 100%
-      );
+    );
 }
 .light {
     background-color: var(--white-background-2);
@@ -725,8 +725,25 @@ section {
     font-weight: normal;  
     letter-spacing: 1px;
 }
-
-
+.footer-new .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.footer-new .social-icon a {
+    font-size: 1.5rem;
+    color: var(--white-color-lighter);
+}
+.footer-new .social-icon .face:hover {
+    color: #1873EB;
+}
+.footer-new .social-icon .git:hover {
+    color: #9354AD;
+}
+.footer-new .social-icon .linked:hover {
+    color: #016CA9;
+}
 /* 
     - End Styles for the New footer 
 */ 
