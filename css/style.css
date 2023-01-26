@@ -474,7 +474,7 @@ section h1 {
     - Start Styles for contact-us section
 */
 .contact-us {
-    background-image: linear-gradient(var(--lighter-main-color), var(--darker-main-color));
+    /* background-image: linear-gradient(var(--lighter-main-color), var(--darker-main-color)); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -482,7 +482,8 @@ section h1 {
 .contact-us .container {
     display: flex;
     height: 50%;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.281);
+    /* box-shadow: 0 5px 30px rgba(0, 0, 0, 0.281); */
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
 }
 .contact-us .container > div {
     height: 100%;
@@ -505,6 +506,21 @@ section h1 {
     -o-animation:       contact-span infinite 10s forwards;
     -ms-animation:      contact-span infinite 10s forwards;
 }
+.contact-us .container {
+    border-radius: 15px;
+}
+
+/* Adding border-radius */
+.contact-us .container .left {
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+.contact-us .container .right {
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+/* End Adding border-radius */
+
 .contact-us .left span.s {
     width: 150px;
     height: 150px;
@@ -724,52 +740,6 @@ section h1 {
 }
 /* end button */
 
-
-
-
-/* 
-    - Styles for the Old footer 
-*/ 
-/* .footer{
-   width:100%;
-   height:100px;
-   background-color: #252627;
-   position:relative;
-
-}
-.big{
- width:100%;
- height:90%;
- display:flex;
- justify-content:space-between;
- justify-items: center;
- text-align: center;
-  
-
-}
-.big div{
-    font-size:25px;
-    color:#eee;
-    margin: 25px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-.big div:hover{
-    font-size:25px;
-    color:#eee;
-    transition:2s;
-    cursor:pointer;
-    border-bottom: 1px solid;
-
-} */
-
-/* 
-    - End Styles for the old footer 
-*/ 
-
-/* //////////////////////////////////////////////// */
-/* //////////////////////////////////////////////// */
-
 /* 
     - Styles for the New footer 
 */ 
@@ -855,6 +825,14 @@ section h1 {
         font-size: 0.9rem;
     }
 }
+@media (width < 850px) {
+    .nav-bar {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+}
 @media (width < 600px) {
     .contact-us h1 {
         font-size: 1.5rem !important;
@@ -878,6 +856,25 @@ section h1 {
         width:  100%;
         height: 50%;
     }
+    /* Adding border-radius */
+    .contact-us .container .left {
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+
+        border-bottom-left-radius: initial;
+        border-bottom-right-radius: initial;
+    
+    }
+    .contact-us .container .right {
+        border-bottom-right-radius: inherit;
+        border-bottom-left-radius: inherit;
+
+        border-top-left-radius: initial;
+        border-top-right-radius: initial;
+
+    }
+    /* End Adding border-radius */
+
     .about span.center {
         width: 3px;
     }
