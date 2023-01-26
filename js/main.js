@@ -48,7 +48,17 @@ function closeMenu() {
 // End the function for closing the mobile-menu
 
 
-
+/* توزيع السكاشن في اليمين والشمال*/
+const skillsBoxs = document.querySelectorAll('#skills .box');
+let arrEnBox = [];
+const revSkilsBoxs=()=>{
+    let rigthPx=520;
+    for(const box of skillsBoxs){
+        box.style.right = `${rigthPx*=-1}px`;
+        arrEnBox.push(false);
+    }
+}
+revSkilsBoxs();
 
 /**
  * End helper fuctions
@@ -60,11 +70,9 @@ function closeMenu() {
 /** start button an scroll  */
 let x = document.getElementById("top");
 x.onclick = function () {
-  scroll({ top: 0, behavior: "smooth" });
+    scroll({ top: 0, behavior: "smooth" });
 };
-let rigthPx=1;
-let theBoxEn1=false;
-const skillsBoxs =document.querySelectorAll('#skills .box');
+
 window.onscroll = function () {
     //console.log(scrollY);
     if (scrollY >= 700) {
@@ -78,9 +86,12 @@ window.onscroll = function () {
     }
     /* start check the screeen in mobile mode */
     if(theBody.getBoundingClientRect().width<775){
-        skillsBoxs.forEach((box)=>{
+        skillsBoxs.forEach((box,i)=>{
             if(box.getBoundingClientRect().top-window.innerHeight+100<1&&box.getBoundingClientRect().top-window.innerHeight+10>-500){
-               console.log(5)
+               if(!arrEnBox[i]){
+                arrEnBox[i]=true;
+                box.style.right=`0px`;
+               }
             }
         })        
     }
