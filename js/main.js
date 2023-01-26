@@ -9,7 +9,7 @@
 const leftItems = document.querySelectorAll('.left .item');
 const rightItems = document.querySelectorAll('.right .item');
 const mobileMenu = document.querySelector('.mobile-menu');
-
+const theBody = document.body;
 
 /**
  * End of global variables
@@ -62,8 +62,11 @@ let x = document.getElementById("top");
 x.onclick = function () {
   scroll({ top: 0, behavior: "smooth" });
 };
+let rigthPx=1;
+let theBoxEn1=false;
+const skillsBoxs =document.querySelectorAll('#skills .box');
 window.onscroll = function () {
-console.log(scrollY);
+    //console.log(scrollY);
     if (scrollY >= 700) {
       x.style.display = "block";
     }  else if(scrollY >= 300) {
@@ -72,6 +75,14 @@ console.log(scrollY);
     } else {
         x.style.display = "none";
         aboutUsAnimation();
+    }
+    /* start check the screeen in mobile mode */
+    if(theBody.getBoundingClientRect().width<775){
+        skillsBoxs.forEach((box)=>{
+            if(box.getBoundingClientRect().top-window.innerHeight+100<1&&box.getBoundingClientRect().top-window.innerHeight+10>-500){
+               console.log(5)
+            }
+        })        
     }
   };
 /** end button an scroll  */
