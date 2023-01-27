@@ -48,16 +48,19 @@ function closeMenu() {
 // End the function for closing the mobile-menu
 
 
-/* توزيع السكاشن في اليمين والشمال*/
+/* skills section to the right and left */
 const skillsBoxs = document.querySelectorAll('#skills .box');
 let arrEnBox = [];
 const revSkilsBoxs=()=>{
+    //check screen mobile or desktop
+    if(theBody.getBoundingClientRect().width<775){
     let rigthPx=520;
     for(const box of skillsBoxs){
         box.style.right = `${rigthPx*=-1}px`;
         arrEnBox.push(false);
-    }
+    }}
 }
+
 revSkilsBoxs();
 
 /**
