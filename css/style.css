@@ -338,37 +338,51 @@ body {
 
 
 /* start section-Projects */
-.project{   display: grid; grid-template-columns: 1fr 1.5fr;}
-
-.project-img
-{background-color: var(--dark-mode-background);
-margin: 20px;
-border-radius: 10px;}
-
-.project-code
-{display: grid;
-grid-template-rows: 1fr 1fr 1fr;
-margin: 20px;}
-
-.information 
-{background-color: var(--darker-main-color);
-margin: 10px;
-width: 130%;
-position: relative;
-border-radius: 10px;} 
-
-
-.project .project-code .Primitive-information p{margin: 20px; color: white;}
-
-.project .project-code .Primitive-information  h3{margin: 20px; color: var(--dark-mode-background);font-weight:700; font-size: 2rem;}
-
-.project .project-code .information  p{margin: 20px; color:var(--dark-mode-background); position: absolute;}
-
-.project .project-code .information  a{text-decoration: none; color: white;}
-
-.project .project-code .Languages-Spoken h4{color: white; display: inline-block; margin: 20px; font-size: larger; font-weight: 400;}
-
-
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+.project-img {
+    background-color: var(--dark-mode-background);
+    margin: 20px;
+    border-radius: 10px;
+}
+.project-code {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 20px;}
+.information {
+    background-color: var(--darker-main-color);
+    margin: 10px;
+    width: 130%;
+    position: relative;
+    border-radius: 10px;
+} 
+.project .project-code .Primitive-information p {
+    margin: 20px;
+    color: white;
+}
+.project .project-code .Primitive-information  h3 {
+    margin: 20px; color: var(--dark-mode-background);
+    font-weight: 700;
+    font-size: 2rem;
+}
+.project .project-code .information  p {
+    margin: 20px;
+    color:var(--dark-mode-background);
+    position: absolute;
+}
+.project .project-code .information  a {
+    text-decoration: none;
+    color: white;
+}
+.project .project-code .Languages-Spoken h4 {
+    color: white;
+    display: inline-block;
+    margin: 20px;
+    font-size: larger; 
+    font-weight: 400;
+}
 
 /* end section-Projects */
 
@@ -568,7 +582,6 @@ section h1 {
 .contact-us .container {
     border-radius: 15px;
 }
-
 /* Adding border-radius */
 .contact-us .container .left {
     border-top-left-radius: inherit;
@@ -867,7 +880,6 @@ section h1 {
     .logo {
         font-size: 1.45rem;
         margin: 0 1rem;
-
     }
     .nav-bar {
         display: none;
