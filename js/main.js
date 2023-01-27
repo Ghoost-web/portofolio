@@ -53,12 +53,32 @@ const skillsBoxs = document.querySelectorAll('#skills .box');
 let arrEnBox = [];
 const revSkilsBoxs=()=>{
     //check screen mobile or desktop
+    let rigthPx=0;
+    // for moblie 
     if(theBody.getBoundingClientRect().width<775){
-    let rigthPx=520;
-    for(const box of skillsBoxs){
-        box.style.right = `${rigthPx*=-1}px`;
-        arrEnBox.push(false);
-    }}
+        rigthPx=520;
+        for(const box of skillsBoxs){
+            box.style.right = `${rigthPx*=-1}px`;
+            arrEnBox.push(false);
+        }
+    }
+    // for taplate
+    else if(theBody.getBoundingClientRect().width<1190){
+        rigthPx=1100;
+        for(const box of skillsBoxs){
+            box.style.right = `${rigthPx==580?rigthPx=1100:rigthPx=580}px`;
+            arrEnBox.push(false);
+        }
+    }
+    //for desktop
+    else if(theBody.getBoundingClientRect().width<2000){
+        rigthPx=2100;
+        let threeTop =0;
+        for(const box of skillsBoxs){
+            box.style.right = `${rigthPx}px`;
+            arrEnBox.push(false);          
+        }
+    }
 }
 
 revSkilsBoxs();
@@ -88,7 +108,7 @@ window.onscroll = function () {
         aboutUsAnimation();
     }
     /* start check the screeen in mobile mode */
-    if(theBody.getBoundingClientRect().width<775){
+    if(theBody.getBoundingClientRect().width<2775){
         skillsBoxs.forEach((box,i)=>{
             if(box.getBoundingClientRect().top-window.innerHeight+100<1&&box.getBoundingClientRect().top-window.innerHeight+10>-500){
                if(!arrEnBox[i]){
