@@ -46,7 +46,7 @@ function sideMenu() {
 // Start the function for closing the mobile-menu
 function closeMenu() {
 	mobileMenu.style.display = 'none';
-	document.body.style.overflow = 'visible';
+	document.body.style.overflowY = 'visible';
 }
 // End the function for closing the mobile-menu
 
